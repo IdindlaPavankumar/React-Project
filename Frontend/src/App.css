@@ -1,0 +1,134 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
+
+:root {
+  --primary: #2c9bd8;
+  --secondary: #0a4c79;
+  --accent: #1f2552;
+  --light: #f5f9ff;
+  --dark: #333;
+}
+
+body {
+  background-color: var(--light);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  /* padding: 0 20px; */
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.4rem;
+  color: var(--secondary);
+  margin-bottom: 3rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary);
+}
+
+.btn-accent {
+  background-color: var(--accent);
+  color: white;
+}
+
+.btn-accent:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(32, 208, 194, 0.4);
+}
+
+/* Grid layouts */
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+/* Add to your CSS file */
+.md-tabs .ant-tabs-nav {
+  width: 100%;
+}
+
+.md-tabs .ant-tabs-nav .ant-tabs-nav-list {
+  width: 100%;
+  display: flex;
+}
+/* Login page styling */
+.md-tabs .ant-tabs-tab {
+  flex: 1 !important;
+  margin: 0 !important;
+  justify-content: center;
+}
+
+.md-tabs .ant-tabs-tab-btn {
+  text-align: center;
+  padding: 0 8px;
+}
+/* Responsive grids */
+@media (max-width: 992px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-3, .grid-2 {
+    grid-template-columns: 1fr;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  .md-tabs .ant-tabs-tab {
+    padding: 12px 8px;
+}
+.md-tabs .ant-tabs-tab-btn {
+    font-size: 14px;
+}
+}
+
+@media (max-width: 576px) {
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
