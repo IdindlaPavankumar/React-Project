@@ -144,7 +144,7 @@ const HealthcareApp = () => {
                                             rules={[{ required: true, message: 'Please input your email!' }]}
                                         >
                                             <Input
-                                                prefix={<MailOutlined />}
+                                                 prefix={<MailOutlined />}
                                                 placeholder="Email"
                                             />
                                         </Form.Item>

@@ -3,27 +3,27 @@ import { Card, Row, Col } from 'antd';
 function DashboardContent() {
     return (
         <>
-            <Row gutter={[16, 16]} style={{ padding: '20px' }}>
+            <Row gutter={[16, 16]} style={{ padding: '20px', textAlign:'center' }}>
                 <Col span={6}>
-                    <Card title="Total Patient">
-                        <p>1200</p>
+                    <Card title="Total Patient" className='Patient-count'>
+                        <p>0</p>
                     </Card>
                 </Col>
                 <Col span={6}>
-                    <Card title="Appointments">
-                        <p>50</p>
+                    <Card title="Appointments" className='Patient-count'>
+                        <p>0</p>
                     </Card>
                 </Col>
                 <Col span={6}>
-                    <Card title="Medical Records">
-                        <p>500</p>
+                    <Card title="Medical Records" className='Patient-count'>
+                        <p>0</p>
                     </Card>
                 </Col>
                 <Col span={6}>
-                    <Card title="Billing & Payments">
-                        <p>1lakh</p>
+                    <Card title="Billing & Payments" className='Patient-count'>
+                        <p>0</p>
                     </Card>
-                </Col>
+                </Col>  
             </Row>
 
             <Row gutter={[16, 16]}>

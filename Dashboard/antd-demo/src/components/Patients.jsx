@@ -1,10 +1,9 @@
 import React from 'react';
-
+import AddPatient from'../components/AddPatient';
 const Patients = () => {
     return (
         <div>
-            <h2>Patient Management</h2>
-            <p>Here you can manage patients.</p>
+            <AddPatient/>
         </div>
     );
 };
