@@ -28,7 +28,8 @@ const Navbar = () => {
           <a href="#contact" onClick={() => setIsOpen(false)}>Contact</a>
           <Link to="/login">
             <button className="btn btn-primary login-btn">Login</button>
-          </Link>      </div>
+          </Link>
+        </div>
 
       </div>
     </nav >

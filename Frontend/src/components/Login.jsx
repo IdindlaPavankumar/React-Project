@@ -26,7 +26,7 @@ import {
 } from '@ant-design/icons';
 
 const { Title, Text, Paragraph } = Typography;
-const { Content} = Layout;
+const { Content } = Layout;
 const { TabPane } = Tabs;
 
 const HealthcareApp = () => {
@@ -75,18 +75,8 @@ const HealthcareApp = () => {
     };
 
     return (
-        <Layout className="layout">
-            {/* <Header style={{ background: '#fff', padding: '0 20px', width:'100%' }}>
-                <Row justify="space-evenly" align="middle">
-                    <Col>
-                        <div style={{ display: 'flex', alignItems: 'center' }}>
-                            <MedicineBoxOutlined style={{ fontSize: '24px', color: '#1890ff' }} />
-                            <Title level={3} style={{ margin: '0 0 0 10px' }}>HealthCare Portal</Title>
-                        </div>
-                    </Col>
-                </Row>
-            </Header> */}
 
+        <Layout className="layout">
             <Content style={{ padding: '50px', background: '#f0f2f5' }}>
                 <Row gutter={24} style={{ height: '100%' }}>
                     {/* Healthcare Content - Now on the left */}
@@ -135,10 +125,10 @@ const HealthcareApp = () => {
                                 activeKey={activeTab}
                                 onChange={setActiveTab}
                                 centered
-                                 className="md-tabs"
+                                className="md-tabs"
                             >
                                 <TabPane
-                                    tab={<div style={{ width: '100%', textAlign: 'center'}}>Login</div>}
+                                    tab={<div style={{ width: '100%', textAlign: 'center' }}>Login</div>}
                                     key="1"
                                 >
                                     <Form
@@ -191,7 +181,10 @@ const HealthcareApp = () => {
                                             <Button
                                                 type="primary"
                                                 htmlType="submit"
-                                                style={{ width: '100%',margin:'px' }}
+                                                style={{
+                                                    width: '100%',
+                                                    padding: '20px', margin: '1px'
+                                                }}
                                             >
                                                 GuestLogin
                                             </Button>
@@ -221,6 +214,7 @@ const HealthcareApp = () => {
                                         onFinish={onFinishSignup}
                                         size="large"
                                     >
+                                        {/* fullnameinput of the signup form*/}
                                         <Form.Item
                                             name="fullname"
                                             rules={[{ required: true, message: 'Please input your full name!' }]}
@@ -230,7 +224,7 @@ const HealthcareApp = () => {
                                                 placeholder="Full Name"
                                             />
                                         </Form.Item>
-
+                                        {/* emailinput of the signup form*/}
                                         <Form.Item
                                             name="email"
                                             rules={[
@@ -243,7 +237,7 @@ const HealthcareApp = () => {
                                                 placeholder="Email"
                                             />
                                         </Form.Item>
-
+                                        {/* Phone numberinput of the signup form*/}
                                         <Form.Item
                                             name="phone"
                                             rules={[{ required: true, message: 'Please input your phone number!' }]}
@@ -253,7 +247,7 @@ const HealthcareApp = () => {
                                                 placeholder="Phone Number"
                                             />
                                         </Form.Item>
-
+                                        {/* Passwordinput of the signup form*/}
                                         <Form.Item
                                             name="password"
                                             rules={[
@@ -266,6 +260,7 @@ const HealthcareApp = () => {
                                                 placeholder="Password"
                                             />
                                         </Form.Item>
+                                        {/* ConfirmPassword input of the signup form*/}
 
                                         <Form.Item
                                             name="confirm"
